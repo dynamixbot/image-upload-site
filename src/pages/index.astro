@@ -1,5 +1,7 @@
 ---
-
+---
+import ImageUpload from '../components/ImageUpload.svelte';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -8,9 +10,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Image Upload - Simple & Fast Image Hosting</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-gray-100 min-h-screen">
+		<ImageUpload client:load />
 	</body>
 </html>
